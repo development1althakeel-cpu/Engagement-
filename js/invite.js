@@ -77,16 +77,16 @@
     if (!storyPhoto || !storySheet || reduce) return;
     var vh = window.innerHeight || 1;
     var top = storySheet.getBoundingClientRect().top;
-    var start = vh * 0.92;
-    var end = vh * 0.2;
+    var start = vh * 0.96;
+    var end = vh * 0.34;
     var t = (start - top) / (start - end);
     if (t < 0) t = 0;
     else if (t > 1) t = 1;
     var eased = t * t * (3 - 2 * t);
-    storyPhoto.style.opacity = (1 - eased * 0.48).toFixed(3);
+    storyPhoto.style.opacity = (1 - eased * 0.82).toFixed(3);
     storyPhoto.style.transform =
       "translate3d(0," + (-22 * eased).toFixed(1) + "px,0) scale(" + (1 - eased * 0.035).toFixed(3) + ")";
-    if (storyVeil) storyVeil.style.opacity = (eased * 0.5).toFixed(3);
+    if (storyVeil) storyVeil.style.opacity = eased.toFixed(3);
   }
 
   function onScroll() {

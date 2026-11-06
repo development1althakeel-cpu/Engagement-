@@ -422,7 +422,7 @@ html.invite-open body.locked { overflow: auto; }
 .story-veil {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(248, 246, 241, 0.08), rgba(248, 246, 241, 0.78));
+  background: linear-gradient(180deg, rgba(248, 246, 241, 0.72), rgba(248, 246, 241, 0.96));
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.6s ease;
@@ -439,11 +439,10 @@ html.invite-open body.locked { overflow: auto; }
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(248, 246, 241, 0) 0,
-    rgba(248, 246, 241, 0.28) 120px,
-    rgba(248, 246, 241, 0.62) 280px,
-    rgba(248, 246, 241, 0.9) 480px,
-    var(--ivory) 640px
+    rgba(248, 246, 241, 0.72) 0,
+    rgba(248, 246, 241, 0.9) 90px,
+    rgba(248, 246, 241, 0.97) 200px,
+    var(--ivory) 320px
   );
 }
 
@@ -1278,25 +1277,11 @@ html.invite-open body.locked { overflow: auto; }
 }
 
 .thanks-card p {
-  margin: 0 0 22px;
+  margin: 0;
   font-family: var(--script);
   font-size: 18px;
   line-height: 1.5;
   color: #687968;
-}
-
-.thanks-close {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 0;
-  border-bottom: 1px solid #a48962;
-  background: transparent;
-  color: var(--forest);
-  padding: 8px 0;
-  font: 600 14px var(--en);
-  letter-spacing: 0.08em;
-  cursor: pointer;
 }
 
 .petal-field {
