@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Arun and Aiswarya//Engagement//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:arun-aiswarya-engagement-20261129@invitation
+DTSTAMP:20261106T090000Z
+DTSTART;TZID=Asia/Kolkata:20261129T230000
+DTEND;TZID=Asia/Kolkata:20261130T010000
+SUMMARY:Engagement of Arun & Aiswarya
+DESCRIPTION:Join us as we celebrate the engagement of Arun and Aiswarya. Sunday, 29 November 2026, 11:00 PM onwards. Little Bay Events, Unity Nagar, Kuriachira.
+LOCATION:Little Bay Events, Unity Nagar, Kuriachira
+GEO:10.51032;76.230412
+END:VEVENT
+END:VCALENDAR
