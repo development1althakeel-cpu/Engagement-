@@ -112,7 +112,7 @@
   }
 
   var shareText =
-    "അരുണിന്റെയും ഐശ്വര്യയുടെയും നിശ്ചയത്തിലേക്ക് താങ്കളെ സാദരം ക്ഷണിക്കുന്നു. ഞായറാഴ്ച, 29 നവംബർ 2026, രാവിലെ 11:00 മുതൽ. ലിറ്റിൽ ബേ ഇവന്റ്സ്, യൂണിറ്റി നഗർ, കുറിയച്ചിറ.";
+    "അരുണിന്റെയും ഐശ്വര്യയുടെയും നിശ്ചയത്തിലേക്ക് താങ്കളെ സാദരം ക്ഷണിക്കുന്നു. ഞായറാഴ്ച, 29 നവംബർ 2026, രാവിലെ 10:00 മുതൽ. ലിറ്റിൽ ബേ ഇവന്റ്സ്, യൂണിറ്റി നഗർ, കുറിയച്ചിറ.";
 
   function toast(message) {
     var t = document.querySelector(".toast");
@@ -203,7 +203,7 @@
 
   var cd = document.querySelector("[data-countdown]");
   if (cd) {
-    var target = new Date("2026-11-29T11:00:00+05:30").getTime();
+    var target = new Date("2026-11-29T10:00:00+05:30").getTime();
     var tick = function () {
       var diff = target - Date.now();
       if (diff <= 0) {
